@@ -12,8 +12,9 @@ int main()
 		if (Num[i] <= Num[imin])
 			imin = i;
 	}
-	swap(&Num[0], &Num[imin]);
 	swap(&Num[9], &Num[imax]);
+	swap(&Num[0], &Num[imin]);
+	printf("Now,they are:\n");
 	for (i = 0; i < 10; i++)
 		printf("%d ", Num[i]);
 	return 0;
