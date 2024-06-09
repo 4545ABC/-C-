@@ -5,10 +5,11 @@ int main()
 {
 	char pages[1000] = { '\0'};
 	int a=0, b=0, c=0, d=0, e=0,i;
+	printf("input string:");
 	gets(pages);
 	for (i = 0; i < 1000 && pages[i] != 0; i++)
 	{
-		if (isupper(pages[i]) == 1)
+		if (pages[i]>=65&&pages[i]<=90)
 			a++;
 		else if (pages[i]>=97&&pages[i]<=122)
 			b++;
